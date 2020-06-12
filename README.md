@@ -4,6 +4,7 @@ A GBT-SCA Low level tool to connect to the SCA OPC UA Server and produce the boa
 
 Requirements:
 - SCA OPC UA Server must be running
+- Be connected to CERN network
 - Remember Micromegas sector name
 
 ```
