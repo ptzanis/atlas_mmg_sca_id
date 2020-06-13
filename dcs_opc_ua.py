@@ -8,8 +8,7 @@ from pyuaf.util             import loglevels, opcuastatuscodes
 
 #Constants (??)
 
-server_address='opc.tcp://pcatlnswfelix02:48020'
-#server_address='opc.tcp://127.0.0.1:4841'
+server_address='opc.tcp://pcatlnswfelix04:48020'
 server_uri='urn:CERN:OpcUaScaServer'
 server_ns=2
 
