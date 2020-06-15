@@ -1,5 +1,5 @@
-export PYTHONPATH=/afs/cern.ch/user/p/ptzanis/public/PyUAF:$PYTHONPATH
-export LD_LIBRARY_PATH=/afs/cern.ch/user/p/ptzanis/public/PyUAF:$LD_LIBRARY_PATH
+export PYTHONPATH=PyUAF/:$PYTHONPATH
+export LD_LIBRARY_PATH=PyUAF/:$LD_LIBRARY_PATH
 SCRIPT=client.py
 /usr/bin/python $SCRIPT -sector $1
 
