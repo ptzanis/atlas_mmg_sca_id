@@ -18,3 +18,9 @@ The program will create 3 files:
 - MMFE8_SCA_ID_AXX.txt
 - L1DDC_SCA_ID_AXX.txt
 - ADDC_SCA_ID_AXX.txt
+
+## Contact
+
+Questions, comments, suggestions, or help?
+
+**Polyneikis Tzanis**: <polyneikis.tzanis@cern.ch
