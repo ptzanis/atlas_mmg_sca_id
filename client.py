@@ -45,7 +45,7 @@ for i,board in enumerate(boardListFile):
     if(re.compile("L1DDC").match(board)):
        l1ddcFile.write(boardName+' '+str(value.targets[0].data)+"\n")
     sys.stdout.write('\r')
-    sys.stdout.write("[%-160s] %d%%" % ('='*i, 101*i/160))
+    sys.stdout.write("[%-100s] %d%%" % ('='*int(101*i/160), 101*i/160))
     sys.stdout.flush()
     time.sleep(0.01)
 
