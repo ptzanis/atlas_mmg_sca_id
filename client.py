@@ -26,12 +26,12 @@ prefix='.id'
 
 sector=args['sector'] 
 
-if not os.path.exists(sector):
-    os.makedirs(sector)
+if not os.path.exists('../'+sector):
+    os.makedirs('../'+sector)
     
-mmfe8File=open(sector+'/MMFE8_SCA_ID_'+sector+'.txt',"w+")
-l1ddcFile=open(sector+'/L1DDC_SCA_ID_'+sector+'.txt',"w+")
-addcFile=open(sector+'/ADDC_SCA_ID_'+sector+'.txt',"w+")
+mmfe8File=open('../'+sector+'/MMFE8_SCA_ID_'+sector+'.txt',"w+")
+l1ddcFile=open('../'+sector+'/L1DDC_SCA_ID_'+sector+'.txt',"w+")
+addcFile=open('../'+sector+'/ADDC_SCA_ID_'+sector+'.txt',"w+")
 
 numberOfBoards=str(len(open('boards_list.txt').readlines()))
 
