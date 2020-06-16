@@ -14,9 +14,9 @@ parser.add_argument("-sector", "--sector", type=str,
    help="Insert Sector side and number  e.g. A12,C01,..")
 args = vars(parser.parse_args())
 
-if not(re.compile("(A|C)(0[1-9]|1[0-6])").match(args['sector'])):
-	print("********   Wrong Sector ID | Please provide a valid sector ID: A01-16 or C01-16   ******** ")
-	sys.exit()
+#if not(re.compile("(A|C)(0[1-9]|1[0-6])").match(args['sector'])):
+#	print("********   Wrong Sector ID | Please provide a valid sector ID: A01-16 or C01-16   ******** ")
+#	sys.exit()
 
 dcs_opc_ua.connect()
 
