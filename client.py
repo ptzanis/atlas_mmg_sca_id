@@ -7,6 +7,7 @@ from pyuaf.util             import opcuastatuscodes, DateTime
 import re
 import sys
 import argparse
+import os 
 
 parser = argparse.ArgumentParser(description='Production of SCA ID per Micromegas sector')
 
@@ -25,6 +26,9 @@ prefix='.id'
 
 sector=args['sector'] 
 
+if not os.path.exists(sector):
+    os.makedirs(sector)
+    
 mmfe8File=open(sector+'/MMFE8_SCA_ID_'+sector+'.txt',"w+")
 l1ddcFile=open(sector+'/L1DDC_SCA_ID_'+sector+'.txt',"w+")
 addcFile=open(sector+'/ADDC_SCA_ID_'+sector+'.txt',"w+")
