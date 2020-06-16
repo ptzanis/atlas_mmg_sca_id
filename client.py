@@ -25,9 +25,9 @@ prefix='.id'
 
 sector=args['sector'] 
 
-mmfe8File=open('MMFE8_SCA_ID_'+sector+'.txt',"w+")
-l1ddcFile=open('L1DDC_SCA_ID_'+sector+'.txt',"w+")
-addcFile=open('ADDC_SCA_ID_'+sector+'.txt',"w+")
+mmfe8File=open(sector+'/MMFE8_SCA_ID_'+sector+'.txt',"w+")
+l1ddcFile=open(sector+'/L1DDC_SCA_ID_'+sector+'.txt',"w+")
+addcFile=open(sector+'/ADDC_SCA_ID_'+sector+'.txt',"w+")
 
 numberOfBoards=str(len(open('boards_list.txt').readlines()))
 
@@ -56,6 +56,5 @@ l1ddcFile.close()
 
 print "\n"
 print "** The SCA ID files for MMFE8, L1DDC and ADDC boards are ready! Have fun!"
-
 
 
